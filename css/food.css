@@ -1,0 +1,21 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: "楷体";
+	color: darkslategray;
+}
+
+.fl_l{
+	float: left;
+}
+
+.fl_r{
+	float: right;
+}
+#container{
+	width: 1200px;
+	height: 3000px;
+	margin: auto;
+	/*background: deepskyblue;*/
+}

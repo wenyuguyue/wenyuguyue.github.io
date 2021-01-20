@@ -1,0 +1,104 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: "楷体";
+	color: darkslategray;
+}
+
+.fl_l {
+	float: left;
+}
+
+.fl_r {
+	float: right;
+}
+
+#container {
+	width: 380px;
+	height: 640px;
+}
+
+#container>#left {
+	width: 100px;
+	height: 640px;
+}
+
+
+#container>#left>dl {
+	width: 80px;
+	height: 75px;
+	list-style: none;
+	margin: 5px auto 0px;
+}
+#container>#left>dl>dt {
+	width: 60px;
+	height: 55px;
+	/*background: blue;*/
+	margin: auto;
+}
+
+#container>#left>dl>dd {
+	width: 60px;
+	height: 15px;
+	margin-bottom: 5px;
+	/*background: red;*/
+	line-height: 15px;
+	text-align: center;
+	font-size: 2px;
+	margin: auto;
+}
+#container>#left>dl>dd>a{
+	text-decoration: none;
+}
+#container>#left>dl>dd>a:hover{
+	color: red;
+	background: cornflowerblue;
+}
+#d1{
+	background: url(../img/nav/djy.jpg);
+	background-size: 100% 100%;
+}
+#d2{
+	background: url(../img/nav/gn.jpg);
+	background-size: 100% 100%;
+}
+#d3{
+	background: url(../img/nav/ws.jpg);
+	background-size: 100% 100%;
+}
+#d4{
+	background: url(../img/nav/wl.jpg);
+	background-size: 100% 100%;
+}
+#d5{
+	background: url(../img/nav/mng.jpg);
+	background-size: 100% 100%;
+}
+#d6{
+	background: url(../img/nav/xlxs.jpg);
+	background-size: 100% 100%;
+}
+#d7{
+	background: url(../img/nav/cs.jpg);
+	background-size: 100% 100%;
+}
+#d8{
+	background: url(../img/nav/qlp.jpg);
+	background-size: 100% 100%;
+}
+#container>#right {
+	width: 280px;
+	height: 640px;
+}
+#container>#right>table>tbody>tr>th>a{
+	text-decoration: none;
+	font-size: 16px;
+}
+#container>#right>table>tbody>tr>td>a{
+	text-decoration: none;	
+}
+#container>#right>table>tbody>tr>td>a:hover{
+	color: white;	
+	background: lightskyblue;
+}

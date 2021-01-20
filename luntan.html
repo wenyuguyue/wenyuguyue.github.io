@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/luntan.css" />
+		<script type="text/javascript" src="js/jquery-2.1.0.js">
+		</script>
+		<script type="text/javascript" src="js/luntan.js">
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="head">
+				<div id="head_top">
+					<a href="#" class="fl_l">设为首页</a>
+					<a href="#" class="fl_l">收藏本站</a>
+				</div>
+				<div id="head_m">
+					<div id="login" class="fl_r">
+						<table border="0" cellspacing="5px" cellpadding="5px">
+							<tr>
+								<td>
+									<select name="user">
+										<option value="用户名" selected="selected">用户名</option>
+										<option value="Email">Email</option>
+									</select>
+								</td>
+								<td>
+									<input type="text" name="" id="" value="" size="22" />
+								</td>
+								<td>
+									<input type="checkbox" />自动登录
+								</td>
+								<td>
+									<a href="#">找回密码</a>
+								</td>
+
+							</tr>
+							<tr>
+								<td>
+									&nbsp;&nbsp;密码&nbsp;&nbsp;
+								</td>
+								<td>
+									<input type="password" name="" id="" value="" size="22" />
+								</td>
+								<td>
+									<button>登录</button>
+								</td>
+								<td>
+									<a href="#">&nbsp;&nbsp;注册</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="head_b">
+					<div id="head_b_t">
+						<div id="head_b_t_l">
+							<ul>
+								<li class="fl_l">
+									<a href="#">首页</a>
+								</li>
+								<li class="fl_l">
+									<a href="#">论坛</a>
+								</li>
+								<li class="fl_l">
+									<a href="#">家园</a>
+								</li>
+								<li class="fl_l">
+									<a href="#">排行榜</a>
+								</li>
+								<li class="fl_l">
+									<a href="#">旅游保险</a>
+								</li>
+							</ul>
+						</div>
+						<div id="head_b_t_r" class="fl_r">
+							<a href="#" onclick="showMenu()">快捷导航</a>
+							<div id="qmenu" class="hide">
+								<input value="搜索主题"/>
+								<ul><a href="#tbzt">特别主题</a>
+									<li><a href="#zbjy">装备交易</a></li>
+									<li><a href="#lysq">旅游商情</a></li>
+								</ul>
+								<ul><a href="#rzlt">人在旅途</a>
+									<li><a href="#xzty">携子同行</a></li>
+									<li><a href="#ygfq">异国风情</a></li>
+									<li><a href="#zjzl">自驾之旅</a></li>
+									<li><a href="#qsbl">骑士部落</a></li>
+									<li><a href="#sxtx">摄行天下</a></li>
+									<li><a href="#hwsl">户外沙龙</a> </li>
+									<li><a href="#jbty">结伴同游 </a></li>
+									<li><a href="#xzyj">行走印记</a></li>
+									<li><a href="#cdmb">成都马帮</a></li>
+									<li><a href="#dyjy">导游家园</a></li>
+									<li><a href="#gxhw">高校户外</a></li>
+									<li><a href="#lywq">旅游维权</a></li>
+									<li><a href="#gf">517官方</a></li>
+								</ul>
+								<ul><a href="#">都市生活</a>
+									<li><a href="#">都市闲情</a></li>
+									<li><a href="#">运动时空</a></li>
+									<li><a href="#">影音世界</a></li>
+									<li><a href="#">美食天地</a></li>
+									<li><a href="#">旅游收藏</a></li>
+								</ul>
+								<ul><a href="#">天府城市</a>
+									<li><a href="#">517宜宾</a></li>
+									<li><a href="#">517德阳</a></li>
+									<li><a href="#">517雅安</a></li>
+									<li><a href="#">517阿坝</a></li>
+									<li><a href="#">517达州</a></li>
+									<li><a href="#">517广元</a></li>
+									<li><a href="#">517广安</a></li>
+									<li><a href="#">517资阳</a></li>
+									<li><a href="#">517绵阳</a></li>
+									<li><a href="#">517攀枝花</a></li>
+									<li><a href="#">517凉山</a></li>
+									<li><a href="#">517乐山</a></li>
+									<li><a href="#">517内江</a></li>
+								</ul>
+								<ul><a href="#">中华大地</a>
+									<li><a href="#">517北京</a></li>
+									<li><a href="#">517江浙沪</a></li>
+									<li><a href="#">517广东</a></li>
+									<li><a href="#">517海南</a></li>
+									<li><a href="#">517云南</a></li>
+									<li><a href="#">517重庆</a></li>
+								</ul>
+								<ul><a href="#">社区管理</a>
+									<li><a href="#">站务管理</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="head_b_b">
+						<table border="0" cellspacing="5px" cellpadding="">
+							<tr>
+								<td><input type="text" value="请输入搜索内容" /></td>
+								<td>
+									<select id="select">
+										<option>搜索</option>
+										<option>用户</option>
+										<option>内容</option>
+									</select>
+								</td>
+								<td><button></button></td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+			<div id="main">
+				<div id="nav">
+					<div id="nav_top">
+						<a href="#">论坛</a>
+					</div>
+					<div id="nav_bottom">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;今日: <em>106 </em><span>|</span>昨日: <em>104 </em><span>|</span>帖子: <em>7460907 </em><span>|</span>活跃会员: <em>320915 </em><span>|</span>欢迎新会员: <em><a href="#" target="_blank" >盈科旅游蒲江 </a></em></p>
+					</div>
+				</div>
+				<div class="kuangjia">
+					<div class="zhuti">
+						<p class="fl_l" name="tbzt">&nbsp;&nbsp;特别主题</p>
+						<img class="on_off fl_r" src="img/luntan/collapsed_no.gif" />
+					</div>
+					<div class="mokuai">
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-bbs.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="zbjy">装备交易</a></h2>
+								<p>主题: 2090, 帖数: 2万</p>
+								<p>
+									<a href="#">最后发表: 2020-7-10 17:19</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-bbs.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="lysq">旅游商情</a></h2>
+								<p>主题: 2807, 帖数: 2万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-14 09:21</a>
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+
+				<div class="kuangjia">
+					<div class="zhuti">
+						<p class="fl_l" name="rzlt">&nbsp;&nbsp;人在旅途</p>
+						<img class="on_off fl_r" src="img/luntan/collapsed_no.gif" />
+					</div>
+					<div class="mokuai">
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-xztx.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="yzxy">携子同行 (2)</a></h2>
+								<p>主题: 857, 帖数: 3万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-15 07:57</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-ygfq.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="ygfq">异国风情</a></h2>
+								<p>主题: 2498, 帖数: 10万</p>
+								<p>
+									<a href="#">最后发表: 2020-7-10 17:35</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-zjzl.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="zjzl">自驾之旅</a></h2>
+								<p>主题: 1万, 帖数: 26万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-14 23:53</a>
+								</p>
+							</dd>
+						</dl>
+						<hr />
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-qsbl.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="qsbl">骑士部落 (2)</a></h2>
+								<p>主题: 6436, 帖数: 19万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-5 22:17</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-sxtx.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="sxtx">摄行天下</a></h2>
+								<p>主题: 1万, 帖数: 33万</p>
+								<p>
+									<a href="#">最后发表: 2020-8-15 16:25</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-hwsl.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#" name="hwsl">户外沙龙 (1)</a></h2>
+								<p>主题: 2万, 帖数: 368万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-15 07:27</a>
+								</p>
+							</dd>
+						</dl>
+						<hr />
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-jbty.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">结伴同游 (5)</a></h2>
+								<p>主题: 6万, 帖数: 82万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-15 07:57</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-xzyj.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">行走印记</a></h2>
+								<p>主题: 2万, 帖数: 124万</p>
+								<p>
+									<a href="#">最后发表: 2020-9-14 22:52</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-cdmb.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">成都马帮</a></h2>
+								<p>主题: 378, 帖数: 7509</p>
+								<p>
+									<a href="#">最后发表: 2020-7-10 17:35</a>
+								</p>
+							</dd>
+						</dl>
+						<hr />
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-dyjy.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">导游家园</a></h2>
+								<p>主题: 5886, 帖数: 5万</p>
+								<p>
+									<a href="#">最后发表: 2020-7-10 17:19</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-gxhw.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">高校户外</a></h2>
+								<p>主题: 617, 帖数: 3446</p>
+								<p>
+									<a href="#">最后发表: 2020-8-13 14:22</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-lywq.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">旅游维权</a></h2>
+								<p>主题: 327, 帖数: 6005</p>
+								<p>
+									<a href="#">最后发表: 2020-2-27 19:31</a>
+								</p>
+							</dd>
+						</dl>
+						<hr />
+						<dl class="xiaomokuai fl_l">
+							<dt class="fl_l"><img src="img/luntan/logo-bbs.jpg"/></dt>
+							<dd class="fl_l">
+								<h2><a href="#">517官方</a></h2>
+								<p>主题: 546, 帖数: 3万</p>
+								<p>
+									<a href="#">最后发表: 2020-7-10 17:35</a>
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div id="foot">
+				<div id="foot_top">
+					<h1>在线会员 - 总计 2381 人在线 - 最高记录是 72083 于 2016-3-18.</h1>
+				</div>
+				<hr />
+				<div id="foot_b">
+					<div id="foot_b_l" class="fl_l">
+						<p>Powered by Discuz! X3.4</p>
+						<p>&copy;2001-2017 Comsenz Inc.</p>
+					</div>
+					<div id="foot_b_r" class="fl_r">
+						<p>
+							<a href="#">联系我们</a>&nbsp;|&nbsp;
+							<a href="#">517旅游网</a>&nbsp;|&nbsp;
+							<a href="#">( 川B2-20080114 )</a>
+						</p>
+						<p id="time"></p>
+					</div>
+				</div>
+			</div>
+			<div id="scroll" class="hide">
+
+			</div>
+		</div>
+
+	</body>
+
+</html>
